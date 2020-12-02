@@ -2,12 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 html {
     font-size: 62.5%;
 }
+body {
+    width: 90%;
+    max-width: 1100px;
+    margin: 10px auto;
+
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 4, auto;
+    grid-template-areas: 'header    header     header'
+                         'main      main       main'
+                         'aside      aside       aside'
+                         'footer    footer     footer'
+    ;
+}
 // Import que no son de estilos principales
 @import 'variables';
 // Import principales de estlos
-@import 'grid-system';
 @import 'header';
+@import 'main';
+@import 'aside';
+@import 'footer';
+//Estilo de texto
