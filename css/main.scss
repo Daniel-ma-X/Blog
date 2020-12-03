@@ -9,7 +9,7 @@ html {
 }
 body {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 10px auto;
 
     display: grid;
@@ -29,4 +29,5 @@ body {
 @import 'main';
 @import 'aside';
 @import 'footer';
+@import 'mediaqueries';
 //Estilo de texto
